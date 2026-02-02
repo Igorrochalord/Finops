@@ -1,0 +1,107 @@
+[
+  {
+    "provider": "GCP",
+    "service_type": "Compute",
+    "name": "e2-medium (VM)",
+    "specs": "2 vCPU, 4GB RAM, Linux",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.033174,
+      "details": {
+          "on_demand": 0.033174,
+          "committed_1y": 0.021,
+          "spot": 0.010
+      }
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Storage",
+    "name": "Persistent Disk",
+    "specs": "pd-balanced / pd-ssd",
+    "pricing": {
+      "unit": "GB/Month",
+      "value_usd": 0.10
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Storage",
+    "name": "Cloud Storage",
+    "specs": "Standard Class",
+    "pricing": {
+      "unit": "GB/Month",
+      "value_usd": 0.020
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Network",
+    "name": "Data Egress",
+    "specs": "Internet Traffic",
+    "pricing": {
+      "unit": "GB",
+      "value_usd": 0.12
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Network",
+    "name": "Cloud Load Balancing",
+    "specs": "HTTP/TCP LB",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.025
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Database",
+    "name": "Cloud SQL (Postgres/MySQL)",
+    "specs": "db-custom-2-4, HA",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.082
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Serverless",
+    "name": "Cloud Functions",
+    "specs": "Per 1 Million Invocations",
+    "pricing": {
+      "unit": "Unit",
+      "value_usd": 0.40
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Containers",
+    "name": "GKE Control Plane",
+    "specs": "Cluster Management",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.10
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Security",
+    "name": "Cloud Armor Policy",
+    "specs": "WAF/DDoS Protection",
+    "pricing": {
+      "unit": "Month",
+      "value_usd": 1.00
+    }
+  },
+  {
+    "provider": "GCP",
+    "service_type": "Observability",
+    "name": "Cloud Logging",
+    "specs": "Log Ingestion",
+    "pricing": {
+      "unit": "GB",
+      "value_usd": 0.50
+    }
+  }
+]

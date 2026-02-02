@@ -1,0 +1,158 @@
+[
+  {
+    "provider": "AWS",
+    "service_type": "Compute",
+    "name": "t3.medium (VM)",
+    "specs": "2 vCPU, 4GB RAM, x86_64, Linux/Windows",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.0416,
+      "details": {
+        "on_demand": 0.0416,
+        "reserved_1y": 0.027,
+        "reserved_3y": 0.018,
+        "spot": 0.010
+      }
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Storage",
+    "name": "EBS Block Storage (gp3/io2)",
+    "specs": "SSD, Encrypted, 3000 IOPS base",
+    "pricing": {
+      "unit": "GB/Month",
+      "value_usd": 0.08
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Storage",
+    "name": "S3 Object Storage",
+    "specs": "Standard Tier, High Availability",
+    "pricing": {
+      "unit": "GB/Month",
+      "value_usd": 0.023
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Storage",
+    "name": "EBS Snapshots",
+    "specs": "Backup & Restore",
+    "pricing": {
+      "unit": "GB/Month",
+      "value_usd": 0.05
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Network",
+    "name": "Data Transfer Out (Internet)",
+    "specs": "Egress Traffic",
+    "pricing": {
+      "unit": "GB",
+      "value_usd": 0.09
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Network",
+    "name": "Application Load Balancer",
+    "specs": "L7 LB, WAF ready",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.025
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Network",
+    "name": "NAT Gateway",
+    "specs": "Managed NAT for Private Subnets",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.045
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Database",
+    "name": "RDS (Postgres/MySQL)",
+    "specs": "db.t3.medium, Multi-AZ",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.067
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Database",
+    "name": "RDS Storage",
+    "specs": "Provisioned Storage for DB",
+    "pricing": {
+      "unit": "GB/Month",
+      "value_usd": 0.115
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Serverless",
+    "name": "Lambda Requests",
+    "specs": "Per 1 Million Requests",
+    "pricing": {
+      "unit": "Unit",
+      "value_usd": 0.20
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Containers",
+    "name": "EKS Control Plane",
+    "specs": "Kubernetes Management",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.10
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Security",
+    "name": "WAF Rule",
+    "specs": "Web Application Firewall Rule",
+    "pricing": {
+      "unit": "Unit",
+      "value_usd": 1.00
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Security",
+    "name": "KMS Key",
+    "specs": "Key Management Service",
+    "pricing": {
+      "unit": "Month",
+      "value_usd": 1.00
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Observability",
+    "name": "CloudWatch Logs",
+    "specs": "Log Ingestion",
+    "pricing": {
+      "unit": "GB",
+      "value_usd": 0.50
+    }
+  },
+  {
+    "provider": "AWS",
+    "service_type": "Licensing",
+    "name": "Windows Server License",
+    "specs": "Per Core/Hour",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.02
+    }
+  }
+]

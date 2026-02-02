@@ -1,0 +1,117 @@
+[
+  {
+    "provider": "Azure",
+    "service_type": "Compute",
+    "name": "Standard_D2s_v5 (VM)",
+    "specs": "2 vCPU, 8GB RAM, x86_64",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.096,
+      "details": {
+         "on_demand": 0.096,
+         "reserved_1y": 0.065,
+         "spot": 0.025
+      }
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Storage",
+    "name": "Managed Disk (SSD)",
+    "specs": "Standard/Premium SSD LRS",
+    "pricing": {
+      "unit": "GB/Month",
+      "value_usd": 0.08
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Storage",
+    "name": "Blob Storage",
+    "specs": "Hot Tier Object Storage",
+    "pricing": {
+      "unit": "GB/Month",
+      "value_usd": 0.018
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Network",
+    "name": "Data Transfer Out",
+    "specs": "Internet Egress",
+    "pricing": {
+      "unit": "GB",
+      "value_usd": 0.087
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Network",
+    "name": "Load Balancer",
+    "specs": "Standard SKU",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.025
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Database",
+    "name": "AzureSQL / PostgreSQL",
+    "specs": "GeneralPurpose 2vCore, HA",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.098
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Serverless",
+    "name": "Azure Functions",
+    "specs": "Per 1 Million Executions",
+    "pricing": {
+      "unit": "Unit",
+      "value_usd": 0.20
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Containers",
+    "name": "AKS Control Plane",
+    "specs": "Kubernetes Management",
+    "pricing": {
+      "unit": "Hour",
+      "value_usd": 0.10
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Security",
+    "name": "Defender for Cloud",
+    "specs": "Per Resource Protection",
+    "pricing": {
+      "unit": "Month",
+      "value_usd": 15.00
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Security",
+    "name": "Key Vault Secret",
+    "specs": "Secret Management",
+    "pricing": {
+      "unit": "Month",
+      "value_usd": 0.03
+    }
+  },
+  {
+    "provider": "Azure",
+    "service_type": "Observability",
+    "name": "Azure Monitor Logs",
+    "specs": "Log Ingestion",
+    "pricing": {
+      "unit": "GB",
+      "value_usd": 0.50
+    }
+  }
+]
